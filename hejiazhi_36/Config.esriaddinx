@@ -1,0 +1,34 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>hejiazhi_36</Name>
+  <AddInID>{ac01298d-bc16-45e2-b842-361721ae99af}</AddInID>
+  <Description>Type in a description for this Add-in.</Description>
+  <Version>1.0</Version>
+  <Image>Images\hejiazhi_36.png</Image>
+  <Author>TOMORROW</Author>
+  <Company></Company>
+  <Date>2018/5/26</Date>
+  <Targets>
+    <Target name="Desktop" version="10.5" />
+  </Targets>
+  <AddIn language="CLR" library="hejiazhi_36.dll" namespace="hejiazhi_36">
+    <ArcMap>
+      <DockableWindows>
+        <DockableWindow id="hejiazhi_36_DockableWindow1" class="DockableWindow1+AddinImpl" caption="My Dockable Window" image="Images\DockableWindow1.png">
+          <InitialPlacement height="300" width="300" state="pinned" position="left" />
+        </DockableWindow>
+      </DockableWindows>
+      <Toolbars>
+        <Toolbar id="Sample-of-hejiazhi36" caption="GIS Sample7" showInitially="true">
+          <Items>
+            <Item refID="hejiazhi_36_Info" />
+            <Item refID="hejiazhi_36_Show" />
+          </Items>
+        </Toolbar>
+      </Toolbars>
+      <Commands>
+        <Button id="hejiazhi_36_Info" class="Info" message="Info" caption="My Button" tip="Info" category="Add-In Controls" image="Images\Info.png" />
+        <Button id="hejiazhi_36_Show" class="Show" message="Show" caption="My Button" tip="Show" category="Add-In Controls" image="Images\Show.png" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>
